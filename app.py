@@ -93,11 +93,11 @@ property_sub_type_list = ['All'] + df['Property Sub Type'].unique().tolist()
 # setting the property type into a list
 property_type_list = ['All','Land','Unit','Building']
 # setting the version into a list
-version_list = ['All','New','Renewal']
+version_list = ['All','New','Renewed']
 # setting the usage type into a list
 usage_type_list = ['All','Residential','Commercial','Other']
 # setting the default date to 01 january 2022
-start_date_default = datetime.datetime(2022, 1, 1).date()
+start_date_default = datetime.datetime(2018, 12, 31).date()
 
 with st.form(key='my_form', clear_on_submit = True):
     project_area = st.selectbox('Search Project or Area', projects_areas, key='project+area')
